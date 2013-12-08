@@ -7,11 +7,11 @@ __asm volatile ("nop");
 #include <math.h>
 #include <PID_v1.h>
 
-//#define USE_MAX31855
+#define USE_MAX31855
 #ifdef  USE_MAX31855
-  #define thermocoupleSOPin A3
-  #define thermocoupleCSPin A2
-  #define thermocoupleCLKPin A1
+  #define thermocoupleSOPin 3
+  #define thermocoupleCSPin 4
+  #define thermocoupleCLKPin 5
   #include <Adafruit_MAX31855.h>
   Adafruit_MAX31855 thermocouple(thermocoupleCLKPin, thermocoupleCSPin, thermocoupleSOPin);
 #endif
@@ -51,6 +51,21 @@ double Thermister(int RawADC) {
  Temp = Temp - 273.15;            // Convert Kelvin to Celcius
  //Temp = (Temp * 9.0)/ 5.0 + 32.0; // Convert Celcius to Fahrenheit
  return Temp;
+}
+
+double readTemp()
+{
+  #ifdef  USE_MAX31855
+    double Temp;
+    for (int i=0;i<5;i++)
+    {
+       Temp = thermocouple.readCelsius();
+       if (!isnan(Temp))
+         return Temp;
+    }
+  #else
+      return(Thermister(analogRead(0))); 
+  #endif
 }
 
 int getTempCommand(char* command)
@@ -165,11 +180,7 @@ void loop()
    //Read Temperature
    if (now - lastReadTemp >= periodReadTemp)
    {
-      #ifdef  USE_MAX31855
-        input = thermocouple.readCelsius();
-      #else
-        input = Thermister(analogRead(0));
-      #endif
+      input = readTemp();
 
       lastReadTemp = now;
       //Serial.println((int)output);
