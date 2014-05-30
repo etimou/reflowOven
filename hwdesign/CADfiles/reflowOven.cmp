@@ -1,0 +1,164 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = ven. 30 mai 2014 09:11:19 CEST
+
+BeginCmp
+TimeStamp = /530BA6E3;
+Reference = C1;
+ValeurCmp = 10u;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530BA6DD;
+Reference = C2;
+ValeurCmp = 10u;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530CEDC7;
+Reference = C3;
+ValeurCmp = 0.1u;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530CE762;
+Reference = C4;
+ValeurCmp = 10n;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530BAB25;
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530A5A7F;
+Reference = C6;
+ValeurCmp = 22p;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530A5A25;
+Reference = C7;
+ValeurCmp = 22p;
+IdModule  = A_C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53882F34;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = A_LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /53882F41;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = A_LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /530A5989;
+Reference = IC1;
+ValeurCmp = ATMEGA328-P;
+IdModule  = A_DIP-28;
+EndCmp
+
+BeginCmp
+TimeStamp = /530B9F6E;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = A_PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53119B93;
+Reference = P2;
+ValeurCmp = CONN_3;
+IdModule  = A_BARREL_JACK;
+EndCmp
+
+BeginCmp
+TimeStamp = /530BA9B5;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = A_PIN_ARRAY-2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /530CE703;
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = A_bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5387A0FD;
+Reference = P5;
+ValeurCmp = CONN_3X2;
+IdModule  = A_PIN_ARRAY-3X2;
+EndCmp
+
+BeginCmp
+TimeStamp = /530BAB18;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = A_R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53883102;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = A_R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5388310D;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = A_R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53879823;
+Reference = SW1;
+ValeurCmp = SW_PUSH_4PTS;
+IdModule  = A_MICROSWITCH_4pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /53879875;
+Reference = SW2;
+ValeurCmp = SW_PUSH_4PTS;
+IdModule  = A_MICROSWITCH_4pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /530BA6D0;
+Reference = U1;
+ValeurCmp = REGUL;
+IdModule  = A_TO220;
+EndCmp
+
+BeginCmp
+TimeStamp = /530CE662;
+Reference = U2;
+ValeurCmp = MAX31855;
+IdModule  = A_DIP-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /530A59F6;
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = A_Quartz;
+EndCmp
+
+EndListe
